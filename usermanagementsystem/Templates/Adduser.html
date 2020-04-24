@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add User</title>
+    <link rel="stylesheet" href="{%static 'style.css' %}">
+  </head>
+  <style>
+    .UserpageBody{
+        background-image: url('{%static "gameover.jpg"%}');
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+  </style>
+  
+  <body class = 'UserpageBody' >
+    <form action="/adddetails"  method="post">
+      {% csrf_token %}
+      <div class = adduser>
+      <input type="text" name="Firstname" value="" placeholder="First name" class = 'Input' required>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <input type="text" name="Lastname" value="" placeholder="Last Name"  class = 'Input' required> <br>
+      <input type="text" name="Email" value="" placeholder="Email" class = 'Input' required><br>
+      <input type="text" name="Age" value="" placeholder="Age" class = 'Input' required><br><br><br><br><br><br><br>
+
+      <button type="submit" class = "adduserbutton" name = "button" placeholder = "Submit">Submit</button>
+
+        </div>
+
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,37 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    
+    <title>Delete User</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </head>
+  <body class = "particularuser">
+
+    <div>
+      <form method="post"action = "/deleteuser1">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="Full name of user" class = 'Input' required>
+        <button class = "adduserbutton" >Enter to delete details</button>
+    </form>
+    <h1 style="color:white;">Full details of user</h1>
+    <div class="d-flex flex-column color">
+      
+      <h2 style="color:rgb(66, 58, 177);">{{data.id}}</h2>
+      <h2 style="color:rgb(66, 58, 177);">{{data.firstname}}</h2>
+      <h2 style="color:rgb(66, 58, 177);;">{{data.lastname}}</h2>
+      <h2 style="color:rgb(66, 58, 177);;">{{data.email}}</h2>
+      <h2 style="color:rgb(66, 58, 177);;">{{data.Age}}</h2>
+     
+    
+  </div>
+<form action="/homepage">
+<button class = "adduserbutton">Back to Homepage</button>
+</form>
+  </div>
+  </html>

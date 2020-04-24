@@ -1,0 +1,46 @@
+.adduser{
+    text-align: right;
+    margin:5%;
+    padding: 10px;
+    text-align: center;
+}
+
+.adduserbutton{
+  text-align: center;
+  color: white;
+  width: 200px;
+  height: 40px;
+  background-color: black;
+}
+
+
+.Input{
+
+    background-color: black;
+    text-align: right;
+    margin: 3%;
+    color: white;
+    width: auto;
+    text-decoration-color: white;
+    font-size: 23px;
+    font-family: cursive fantasy;
+    font-style: italic;
+    text-align: center;
+    border: none;
+
+}
+.heading1{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.particularuser
+{
+  text-align: center;
+  background-color: black;
+}
+
+.showname{
+  color:white;
+  font-size: 35px;
+}
